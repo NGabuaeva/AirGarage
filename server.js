@@ -5,7 +5,10 @@ const cors = require('cors')
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use(cors())
+app.use(cors({
+  origin: 'http://localhost',
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 app.get('/ping', function (req, res) {
   return res.send('pong');
