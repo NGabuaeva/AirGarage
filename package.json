@@ -9,19 +9,23 @@
     "@testing-library/user-event": "^7.1.2",
     "autoprefixer": "^9.8.0",
     "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
     "colorette": "^1.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-cache-controller": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-hook-form": "^6.6.0",
+    "react-scripts": "3.4.3",
+    "yelp-api": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
   },
   "eslintConfig": {
     "extends": "react-app"
